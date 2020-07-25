@@ -170,7 +170,7 @@ p {
 .communication-list-item-link:focus,
 .contacts-list-item-link:hover,
 .contacts-list-item-link:focus {
-  color: var(--accent-color);
+color: var(--accent-color);
 }
 
 /* Герой */
@@ -241,15 +241,32 @@ p {
   width: 270px;
 }
 
-.features-list-img {
-  background: #f5f4fa;
+.features-list-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
   border-radius: 4px;
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
   margin-bottom: 30px;
-}
+ }
+
+ .icon-antenna::before {
+   background-image: url(../images/main/antenna-icon.svg);
+ }
+
+ .icon-clock::before {
+   background-image: url(../images/main/clock-icon.svg);
+ }
+
+ .icon-notebook::before {
+   background-image: url(../images/main/notebook-icon.svg);
+ }
+
+ .icon-astronaut::before {
+   background-image: url(../images/main/astronaut-icon.svg);
+ }
 
 .features-title {
   font-weight: 700;
@@ -478,7 +495,7 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-appeal {
+.footer-appeal-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -486,11 +503,56 @@ p {
   color: #ffffff;
 }
 
+.footer-appeal {
+  margin-bottom: 20px;
+}
+
 .social-links {
   padding-top: 72px;
   padding-bottom: 100px;
   margin-right: 94px;
 }
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-item-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social-item-link:hover,
+.footer-social-item-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-instagram {
+background-image: url(../images/footer/instagram.svg);
+}
+
+.footer-twitter {
+background-image: url(../images/footer/twitter.svg);
+}
+
+.footer-facebook {
+background-image: url(../images/footer/facebook.svg);
+}
+
+.footer-linkedin {
+background-image: url(../images/footer/linkedin.svg);
+}
+
+
 
 /* Портфолио */
 
