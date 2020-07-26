@@ -596,7 +596,6 @@ background-image: url(../images/footer/linkedin.svg);
   min-width: 200px;
 }
 
-
 .subscribe-button::after {
   content: "";
   display: inline-block;
@@ -606,8 +605,6 @@ background-image: url(../images/footer/linkedin.svg);
   height: 24px;
   margin-left: 10px;
 }
-
-
 
 /* Портфолио */
 
