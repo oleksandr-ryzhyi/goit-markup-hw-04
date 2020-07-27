@@ -732,7 +732,6 @@ p {
 .projects-list-item {
   width: 370px;
   height: 404px;
-  border: 1px solid #eeeeee;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -777,7 +776,16 @@ p {
   background: rgba(33, 150, 243, 0.9);
 }
 
-/* .projects-list-item-link:hover {
+.projects-list-item-link {
+  outline: 1px solid #eeeeee;
+}
+
+.projects-list-item-link:hover,
+.projects-list-item-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
-} */
+}
+
+.projects-list-item-link:hover {
+  outline: none;
+}
