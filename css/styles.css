@@ -116,13 +116,12 @@ p {
   margin-top: 28px;
 }
 
-
 .navigation-list-item-link::after {
   content: "";
   display: block;
   width: 100%;
   height: 4px;
-  background-color none;
+  background-color: none;
   border-radius: 2px;
   margin-top: 28px;
 }
@@ -153,7 +152,6 @@ p {
   color: var(--accent-color);
 }
 
-
 .communication-list-item-link {
   font-weight: 500;
   font-size: 14px;
@@ -170,7 +168,29 @@ p {
 .communication-list-item-link:focus,
 .contacts-list-item-link:hover,
 .contacts-list-item-link:focus {
-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.mail-icon {
+  width: 16px;
+  height: 11px;
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+}
+
+.communication-list-item-link:hover .mail-icon {
+  fill: var(--accent-color);
+}
+
+.smartphone-icon {
+  width: 10px;
+  height: 15px;
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+}
+
+.communication-list-item-link:hover .smartphone-icon {
+  fill: var(--accent-color);
 }
 
 /* Герой */
@@ -247,26 +267,26 @@ color: var(--accent-color);
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
- }
+}
 
- .icon-antenna::before {
-   background-image: url(../images/main/antenna-icon.svg);
- }
+.icon-antenna::before {
+  background-image: url(../images/main/antenna-icon.svg);
+}
 
- .icon-clock::before {
-   background-image: url(../images/main/clock-icon.svg);
- }
+.icon-clock::before {
+  background-image: url(../images/main/clock-icon.svg);
+}
 
- .icon-notebook::before {
-   background-image: url(../images/main/notebook-icon.svg);
- }
+.icon-notebook::before {
+  background-image: url(../images/main/notebook-icon.svg);
+}
 
- .icon-astronaut::before {
-   background-image: url(../images/main/astronaut-icon.svg);
- }
+.icon-astronaut::before {
+  background-image: url(../images/main/astronaut-icon.svg);
+}
 
 .features-title {
   font-weight: 700;
@@ -393,7 +413,6 @@ color: var(--accent-color);
   padding-right: 32px;
   padding-left: 32px;
   padding-bottom: 24px;
-  background-color: burlywood;
 }
 
 .social-list-item:not(:last-child) {
@@ -401,8 +420,25 @@ color: var(--accent-color);
 }
 
 .social-list-item-link {
-  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   padding: 12px;
+}
+
+.social-icons {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-list-item-link:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.social-list-item-link:hover .social-icons {
+  fill: #ffffff;
 }
 
 /* Постоянные клиенты */
@@ -431,10 +467,6 @@ color: var(--accent-color);
   padding-bottom: 94px;
 }
 
-/* .regular-customers-list:not(:last-child) {
-  margin-right: 30px;
-} */
-
 .regular-customers-list-item-link {
   display: flex;
   align-items: center;
@@ -443,6 +475,49 @@ color: var(--accent-color);
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.regular-customers-list-item-link:hover,
+.regular-customers-list-item-link:focus {
+  border-color: var(--accent-color);
+}
+
+.customers-icon {
+  fill: #afb1b8;
+}
+
+.customer1-icon {
+  width: 44px;
+  height: 49px;
+}
+
+.regular-customers-list-item-link:hover .customers-icon {
+  fill: var(--accent-color);
+}
+
+.customer2-icon {
+  width: 40px;
+  height: 52px;
+}
+
+.customer3-icon {
+  width: 41px;
+  height: 43px;
+}
+
+.customer4-icon {
+  width: 80px;
+  height: 42px;
+}
+
+.customer5-icon {
+  width: 59px;
+  height: 47px;
+}
+
+.customer6-icon {
+  width: 88px;
+  height: 45px;
 }
 
 /* Подвал */
@@ -537,19 +612,19 @@ color: var(--accent-color);
 }
 
 .footer-instagram {
-background-image: url(../images/footer/instagram.svg);
+  background-image: url(../images/footer/instagram.svg);
 }
 
 .footer-twitter {
-background-image: url(../images/footer/twitter.svg);
+  background-image: url(../images/footer/twitter.svg);
 }
 
 .footer-facebook {
-background-image: url(../images/footer/facebook.svg);
+  background-image: url(../images/footer/facebook.svg);
 }
 
 .footer-linkedin {
-background-image: url(../images/footer/linkedin.svg);
+  background-image: url(../images/footer/linkedin.svg);
 }
 
 /* Секция "Подписаться" */
@@ -701,3 +776,8 @@ background-image: url(../images/footer/linkedin.svg);
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
 }
+
+/* .projects-list-item-link:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+} */
